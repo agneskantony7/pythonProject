@@ -1,0 +1,29 @@
+{% extends "ad.html" %} {% block title %}login{% endblock %}
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    </head>
+    <body>
+<div class="loginbox">
+<img src="./images/3.jpg" class="avatar">
+
+<form method="POST">
+
+    <div class="menu1">
+        <ul>
+            <li><a href="./doctorsignup.html">Doctor Sign Up</a></li>
+            <li><a href="./user.html">Patient Sign Up</a></li>
+            <li><a href="./doctorsignin.html">Doctor Sign In</a></li>
+            <li><a href="./usernew.html">Patient Sign In</a></li>
+
+            <!-- <li><a href="#">Admin</a></li> -->
+        </ul>
+    </div>
+</form>
+</div>
+    </body>
+</html>
+{% block content%}

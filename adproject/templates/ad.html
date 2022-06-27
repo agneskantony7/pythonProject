@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <title>{% block title %}Home{% endblock %}</title>
+    <title>ALZHEIMER'S PREDICTION</title>
+            <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="loginbox2">
+
+        <h1>MRI</h1>
+
+        <form action="/predict" method="post">
+
+            <div class="form first">
+
+                <div class="details personal">
+
+                    <!-- <span class="title">MRI</span> -->
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Size of Ventricle</label>
+                            <input type="number" placeholder=" " required name="Ventricle">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Size of Hippocampus</label>
+                            <input type="number" placeholder=" " required name="Hippocampus">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Volume of Whole-brain</label>
+                            <input type="number" placeholder=" " required name="Whole-brain">
+                        </div>
+                        <div class="input-field">
+                            <label>Size of Fusiform</label>
+                            <input type="number" placeholder=" " required name="Fusiform">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Size of Entorhinal</label>
+                            <input type="number" placeholder=" " required name="Entorhinal">
+                        </div>
+                        <div class="input-field">
+                            <label>Mid-temp</label>
+                            <input type="number" placeholder=" " required name="Mid-temp">
+                        </div>
+                        <div class="input-field">
+                            <label>RAVLT immediate</label>
+                            <input type="number" placeholder=" " required name="RAVLT immediate">
+                        </div>
+
+                        <div class="input-field">
+                            <label>RAVLT Learning</label>
+                            <input type="number" placeholder=" " required name="RAVLT Learning">
+                        </div>
+
+                        <div class="input-field">
+                            <label>RAVLT Forgetting</label>
+                            <input type="number" placeholder=" " required name="RAVLT Forgetting">
+                        </div>
+                        <div class="input-field">
+                            <label>RAVLT perc_forgetting</label>
+                            <input type="number" placeholder=" " required name="RAVLT perc_forgetting">
+                        </div>
+                        <div class="input-field">
+                            <label>Level of FDG</label>
+                            <input type="number" placeholder=" " required name="FDG">
+                        </div>
+                        <div class="input-field">
+                            <label>AGE</label>
+                            <input type="number" placeholder=" " required name="AGE">
+                        </div>
+                        <div class="input-field">
+                            <label>PTEDUCATION</label>
+                            <input type="number" placeholder=" " required name="PTEDUCATION">
+                        </div>
+                        <div class="input-field">
+                            <label>APOE4</label>
+                            <input type="number" placeholder="" required name="APOE4">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn-large waves-effect waves-light orange">prediction</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+
+    </div>
+    <!--<script src="script.js"></script>-->
+</body>
+</html>

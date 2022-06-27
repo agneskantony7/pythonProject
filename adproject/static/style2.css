@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding:0;
+    background: fixed;
+
+    background :url("../images/r.png");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.container{
+    padding: 16px;
+    /*background-color: white;*/
+
+}
+input[type=fullName],input[type=middleName],input[type=lastName],input[type=date],input[type=text],input[type=number],input[type=education],input[type=education],input[type=Apoe]{
+    width: 100%;
+    height: 15px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    /* border: none;    */
+    outline: none;
+    background: whitesmoke;
+
+
+}
+.form1
+{
+
+top:50%;
+left:50%;
+padding: 10px;
+}
+
+.loginbox2{
+    width: 800px;
+    /* height: 800px; */
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px;
+}
+.loginbox3{
+    width: 800px;
+    height: 950px;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.avatar{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:static;
+    top:-50px;
+    left:calc(50% - 50%);
+}
+.menu1{
+    width: 400px;
+    float:none;
+    height: 70px;
+    margin-top: 43px;
+}
+ul{
+    float:left;
+    display:contents;
+    justify-content: center;
+    align-items: center;
+
+}
+ul li{
+
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    font-family: Arial;
+    font-weight:lighter;
+    transition: 0.4s ease-in-out;
+
+}
+ul li a:hover{
+    color:aquamarine;
+}
+.registerbtn:hover{
+    opacity: 1;
+}
+.registerbtn{
+    background-color:grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+
+}
+.button{
+    background-color:grey;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.9;
+
+}
+.registerbtn{
+    background-color:grey;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+
+}
+.btn{
+    cursor: pointer;
+    color: aliceblue;
+    float:right;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 8px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}

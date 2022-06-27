@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Doctor</title>
+    <link rel="stylesheet" href="./css/styledoctor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="./script/doctor.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper col-6">
+            <div class="space-provider">
+                <div class="loginbox2">
+                    <h1 style="text-align: center;">Doctor's Details</h1>
+                    <form class="form2" id="doctorsignupform" autocomplete="off">
+
+                        <p class="register-info mt-3" style="text-align: left; color: red;">Note: All fields are
+                            required.</p>
+                        <div class="row mb-3 mt-3">
+                            <div class="col-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-4">
+                                <label for="middleName" class="form-label">Middle Name</label>
+                                <input type="text" class="form-control" id="middleName">
+                            </div>
+                            <div class="col-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="col-6">
+                                <label for="password" class="form-label">password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="gender" class="mb-1">Gender</label>
+                                <select name="gender" id="gender" class="form-select">
+                                    <option value="" disabled selected></option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="">Date of Birth</label>
+                                <input type="date" placeholder="DOB" class="form-control" id="dob">
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <div class="col-4">
+                                <label for="place" class="form-label">Place</label>
+                                <input type="text" class="form-control" id="place">
+                            </div>
+                            <div class="col-4">
+                                <label for="pincode" class="form-label">Pincode</label>
+                                <input type="text" class="form-control" id="pincode">
+                            </div>
+                            <div class="col-4">
+                                <label for="district" class="form-label">District</label>
+                                <input type="text" class="form-control" id="district">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="address" placeholder="Address" class="form-control" id="address"
+                                rows="5"></textarea>
+                        </div>
+                        <div style="text-align: center;" class="mb-3">
+                            <input type="button" class="btn btn-success" value="Sign In" onclick="signup()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
